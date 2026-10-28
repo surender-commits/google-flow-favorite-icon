@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Google Flow Favorite Icon Modification.",
+    "version": "1.0.0",
+    "description": "Black Background of Favorite Icon in Google Flow.",
+    "icons": {
+        "16": "icon.png",
+        "32": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://flow.google.com/*"
+            ],
+            "css": [
+                "custom_style.css"
+            ],
+            "run_at": "document_start"
+        }
+    ]
+}
